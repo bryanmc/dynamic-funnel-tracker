@@ -1,0 +1,23 @@
+{
+  "name": "mz-tools",
+  "version": "1.0.0",
+  "description": "A toolset of miscellaneous functionality",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "clear && mocha tests/index.test.js -w",
+    "tsc": "tsc",
+    "surge-deploy": "surge --domain https://mztoolz.surge.sh",
+    "test-td": "mocha --opts mocha.opts && rm -rf test",
+    "test-td:auto": "mocha --opts mocha.opts --watch"
+  },
+  "author": "Bryan McConnahea",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jquery": "^3.1.0",
+    "jsdom": "^9.4.1",
+    "mocha": "^3.0.2",
+    "mocha-jsdom": "^1.1.0",
+    "ts-node": "^1.2.2"
+  }
+}

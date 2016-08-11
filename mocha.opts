@@ -1,0 +1,4 @@
+--require test/utils/dom.js
+--reporter dot
+--watch-extensions tsx,ts
+tests/*.spec.ts
